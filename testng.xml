@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="vtiger_automation">
+
+<listeners>
+
+<listener class-name="utils.ExtentReportManager"></listener>
+
+</listeners>
+
+  <test thread-count="5" name="Test">
+  
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+ 		 <class name="testCases.LoginTest"/>
+          <!-- <class name="testCases.LeadTest"/> -->
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- vtiger_automation -->
